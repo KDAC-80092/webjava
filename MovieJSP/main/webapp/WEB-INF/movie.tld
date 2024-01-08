@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+    version="2.0">
+    <description>tag to get title of movie using movie id</description>
+    <tlib-version>1.0</tlib-version>
+    <short-name>Movie-Tags</short-name>
+    <uri>/WEB-INF/movie.tld</uri>
+    <tag>
+        <description>To get movie title</description>
+        <name>title</name>
+        <tag-class>com.sunbeam.tags.MovieTitleTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>movieId</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+            <type>String</type>
+        </attribute>
+    </tag>
+</taglib>
+
